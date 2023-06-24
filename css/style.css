@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#keys-section{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-image: url("https://i.postimg.cc/Jz6wqkD5/crowd-1056764-1280.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* heading */
+.heading{
+    text-shadow: black 0px 0px 7px;
+}
+
+
+.key{
+    display: block;
+    text-align: center;
+    padding: 10px;
+    padding-bottom: 0px;
+    border: black 4px solid;
+    box-shadow: black 0px 0px 10px;
+    margin: 10px;
+    background-color: rgba(0, 0, 0, 0.321);
+    transition: all 0.3s;
+}
+.sound{
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: black 2px 2px 9px;
+}
+.key p{
+    color: goldenrod;
+    text-shadow: black 1px 1px 10px;
+}
+/* when key is clicked */
+.playing{
+    transform: scale(1.1);
+    border: goldenrod 4px solid;
+    box-shadow: goldenrod 0px 0px 40px;  
+}

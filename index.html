@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- bootstrap css -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- personal css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <title>DRUM KIT</title>
+</head>
+<body>
+
+<section id="keys-section">
+<div class="container">
+    <div class="row  justify-content-center text-center heading">
+        <h1 class="text-light">SIMPLE DRUM KIT</h1>
+        <p class="text-light pb-3">Click the buttons on your keyboard to play a sound</p>
+    </div>
+
+    <div class="keys row justify-content-center">
+        <!-- the word " data- " can be linked with anything eg. " data-key ", " data-ball ", " data-car " creating a unique data set instead of using id/class to link data  -->
+        <!-- to get data-key number/id/ect  you would add keycode to the js to display the number of the key -->
+            <div data-key="65" class="key col-sm-1">
+                <span class="sound">A</span>
+                <p>714break</p>
+            </div>
+            <div data-key="83" class="key col-sm-1">
+                <span class="sound">S</span>
+                <p>cinematic-trash-kick-loop</p>
+            </div>
+            <div data-key="68" class="key col-sm-1">
+                <span class="sound">D</span>
+                <p>failure-drum</p>
+            </div>
+            <div data-key="70" class="key col-sm-1">
+                <span class="sound">F</span>
+                <p>fresh_snap</p>
+            </div>
+            <div data-key="71" class="key col-sm-1">
+                <span class="sound">G</span>
+                <p>hit-drum-superclasher-cinematic-trailer</p>
+            </div>
+            <div data-key="72" class="key col-sm-1">
+                <span class="sound">H</span>
+                <p>hit-of-orchestral-cymbals-and-bass-drum</p>
+            </div>
+            <div data-key="74" class="key col-sm-1">
+                <span class="sound">J</span>
+                <p>kick-bass-808</p>
+            </div>
+            <div data-key="75" class="key col-sm-1">
+                <span class="sound">K</span>
+                <p>punch-boxing</p>
+            </div>
+        
+        </div>
+</div>
+
+
+</section> 
+
+
+
+<!-- set audio for each data-key which will be called when key is clicked -->
+<audio data-key="65" src="./sound/714break_019a_090bpm-108315.mp3"></audio>
+<audio data-key="83" src="./sound/cinematic-trash-kick-loop-132274.mp3"></audio>
+<audio data-key="68" src="./sound/failure-drum-sound-effect-2-7184.mp3"></audio>
+<audio data-key="70" src="./sound/fresh_snap-37385.mp3"></audio>
+<audio data-key="71" src="./sound/hit-drum-superclasher-cinematic-trailer-sound-effects-124759.mp3"></audio>
+<audio data-key="72" src="./sound/hit-of-orchestral-cymbals-and-bass-drum-14471.mp3"></audio>
+<audio data-key="74" src="./sound/kick-bass-808-drums-loop-6-11282.mp3"></audio>
+<audio data-key="75" src="./sound/punch-boxing-02wav-14897.mp3"></audio>
+
+
+<!-- personal js -->
+<script src="./js/index.js"></script>
+
+</body>
+</html>
