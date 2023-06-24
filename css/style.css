@@ -28,7 +28,7 @@
     border: black 4px solid;
     box-shadow: black 0px 0px 10px;
     margin: 10px;
-    background-color: rgba(0, 0, 0, 0.321);
+    background-color: rgba(0, 0, 0, 0.499);
     transition: all 0.3s;
 }
 .sound{
